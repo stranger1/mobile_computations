@@ -10,3 +10,7 @@ Features to consider:
 * Bookmarks
 
 *Details of the project are to be specified. For now this repository is created as a requirement for a first lab*
+
+Project team
+--------
+* Mykola Previr
