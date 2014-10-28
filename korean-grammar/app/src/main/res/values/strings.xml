@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Korean grammar</string>
+    <string name="hello_username">Hello, username!</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_noun">Basic words (noun)</string>
+    <string name="button_verb">Basic words (verb)</string>
+    <string name="button_grammar">Grammar</string>
+    <string name="button_numbers">Numbers</string>
+    <string name="title_activity_nouns">nouns</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>
