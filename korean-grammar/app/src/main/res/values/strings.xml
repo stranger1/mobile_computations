@@ -10,5 +10,18 @@
     <string name="button_numbers">Numbers</string>
     <string name="title_activity_nouns">nouns</string>
     <string name="hello_world">Hello world!</string>
+    <string name="kor_country">나라!</string>
+
+    <string name="title_activity_show_entry">ShowEntry</string>
+
+    <!-- Nouns -->
+    <string name="word_human">사람 - human</string>
+    <string name="word_human_text">example</string>
+    <string name="word_weather">닐씨 - weather</string>
+    <string name="word_weather_text">example2</string>
+
+
+    <!--Error messages-->
+    <string name="button_error">Button click error</string>
 
 </resources>

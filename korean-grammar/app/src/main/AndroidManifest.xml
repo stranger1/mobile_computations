@@ -20,6 +20,10 @@
             android:name=".nouns"
             android:label="@string/title_activity_nouns" >
         </activity>
+        <activity
+            android:name=".ShowEntry"
+            android:label="@string/title_activity_show_entry" >
+        </activity>
     </application>
 
 </manifest>
