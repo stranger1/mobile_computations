@@ -25,9 +25,6 @@ public class ShowEntry extends Activity {
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
-        TextView textView = (TextView) findViewById(R.id.show_entry_text);
-        Bundle extras = getIntent().getExtras();
-//        textView.setText(extras.getString("text"));
     }
 
 
@@ -62,6 +59,11 @@ public class ShowEntry extends Activity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_show_entry, container, false);
+
+            TextView textView = (TextView) rootView.findViewById(R.id.show_entry_text);
+            Bundle extras = getActivity().getIntent().getExtras();
+            textView.setText(extras.getString("text"));
+
             return rootView;
         }
     }
