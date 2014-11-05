@@ -36,6 +36,24 @@ public class Home extends Activity {
         startActivity(intent);
     }
 
+    public void startVerbs(View iView) {
+        Intent intent = new Intent( this, Verbs.class );
+
+        startActivity(intent);
+    }
+
+    public void startGrammar(View iView) {
+        Intent intent = new Intent( this, Grammar.class );
+
+        startActivity(intent);
+    }
+
+    public void startNumbers(View iView) {
+        Intent intent = new Intent( this, Numerals.class );
+
+        startActivity(intent);
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

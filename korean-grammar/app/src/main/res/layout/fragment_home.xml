@@ -36,19 +36,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/button_verb"
-            android:id="@+id/button_verb" />
+            android:id="@+id/button_verb"
+            android:onClick="startVerbs"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/button_grammar"
-            android:id="@+id/button_grammar" />
+            android:id="@+id/button_grammar"
+            android:onClick="startGrammar"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/button_numbers"
-            android:id="@+id/button_numbers" />
+            android:id="@+id/button_numbers"
+            android:onClick="startNumbers"/>
     </LinearLayout>
 
 </RelativeLayout>

@@ -44,6 +44,12 @@ public class nouns extends Activity {
             case R.id.button_weather:
                 grammarTextId = R.string.word_weather_text;
                 break;
+            case R.id.button_market:
+                grammarTextId = R.string.word_market_text;
+                break;
+            case R.id.button_tree:
+                grammarTextId = R.string.word_tree_text;
+                break;
             default:
                 grammarTextId = R.string.button_error;
         }

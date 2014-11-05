@@ -7,39 +7,28 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="kpi.mobcomp.korean_grammar.nouns$PlaceholderFragment">
+    tools:context="kpi.mobcomp.korean_grammar.Grammar">
 
     <TextView
-        android:text="@string/button_noun"
+        android:text="@string/button_grammar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <Button
-        android:text="@string/word_human"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button_human"
-        android:onClick="showEntry"/>
-    <Button
-        android:text="@string/word_weather"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button_weather"
-        android:onClick="showEntry"/>
-    <Button
-        android:text="@string/word_tree"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button_tree"
+        android:text="@string/grammar_symnida"
+        android:id="@+id/grammar_symnida"
         android:layout_gravity="center_horizontal"
         android:onClick="showEntry"/>
+
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/word_market"
-        android:id="@+id/button_market"
+        android:text="@string/grammar_symnika"
+        android:id="@+id/grammar_symnika"
         android:layout_gravity="center_horizontal"
-        android:onClick="showEntry"/>
+        />
 
 
 </LinearLayout>

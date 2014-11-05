@@ -7,21 +7,50 @@
     <string name="button_noun">Basic words (noun)</string>
     <string name="button_verb">Basic words (verb)</string>
     <string name="button_grammar">Grammar</string>
-    <string name="button_numbers">Numbers</string>
+    <string name="button_numbers">Numerals</string>
     <string name="title_activity_nouns">nouns</string>
     <string name="hello_world">Hello world!</string>
     <string name="kor_country">나라!</string>
-
     <string name="title_activity_show_entry">ShowEntry</string>
 
     <!-- Nouns -->
     <string name="word_human">사람 - human</string>
-    <string name="word_human_text">example</string>
-    <string name="word_weather">닐씨 - weather</string>
-    <string name="word_weather_text">example2</string>
+    <string name="word_human_text">example \'사람\'</string>
+    <string name="word_weather">날씨 - weather</string>
+    <string name="word_weather_text">example \'날씨\'</string>
+    <string name="word_tree">나무 - tree</string>
+    <string name="word_tree_text">example tree</string>
+    <string name="word_market">시장 - market</string>
+    <string name="word_market_text">example market</string>
 
+    <!-- Verbs -->
+    <string name="word_to_like">좋아하다 - to like</string>
+    <string name="word_to_like_text">examples \'좋아하다\' </string>
+    <string name="word_to_love">사랑하다 - to love</string>
+    <string name="word_to_love_text">examples \'사랑하다\' </string>
+    <string name="word_to_travel">여행하다 - to travel</string>
+    <string name="word_to_travel_text">examples \'여행하다\'</string>
+    <string name="word_to_wait">기다리다 - to wait</string>
+    <string name="word_to_wait_text">examples \'기다리다\'</string>
 
-    <!--Error messages-->
+    <!-- Grammar -->
+    <string name="grammar_symnida">~(스)ㅂ니다 (do)</string>
+    <string name="grammar_symnida_text">The basic form of korean verbs and adjectives are "~다".
+        We change "~다" into "~(스)ㅂ니다" in formal situation, such as in a meeting, presentation,
+        interview, newscast, etc. When the "stem(어미)" of the verb/adjective ends in a vowel,
+        we add "~ㅂ니다" to the word stem. When the word stem ends in a last consonant, we add "습니다".</string>
+    <string name="grammar_symnika">~(스)ㅂ니까 (do?)</string>
+    <string name="grammar_symnika_text">When we use "(스)ㅂ니다" in a formal context, we use "–(스)ㅂ니까?"
+        to ask a question.</string>
+
+    <!-- Numeric -->
+    <string name="numerals_korean">Korean numerals</string>
+    <string name="numerals_sinokorean">Sino-korean numerals</string>
+
+    <!-- Error messages -->
     <string name="button_error">Button click error</string>
+    <string name="title_activity_verbs">Verbs</string>
+    <string name="title_activity_grammar">Grammar</string>
+    <string name="title_activity_numerals">Numerals</string>
 
 </resources>

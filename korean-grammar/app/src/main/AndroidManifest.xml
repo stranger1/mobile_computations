@@ -24,6 +24,18 @@
             android:name=".ShowEntry"
             android:label="@string/title_activity_show_entry" >
         </activity>
+        <activity
+            android:name=".Verbs"
+            android:label="@string/title_activity_verbs" >
+        </activity>
+        <activity
+            android:name=".Grammar"
+            android:label="@string/title_activity_grammar" >
+        </activity>
+        <activity
+            android:name=".Numerals"
+            android:label="@string/title_activity_numerals" >
+        </activity>
     </application>
 
 </manifest>
