@@ -20,11 +20,7 @@ public class ShowEntry extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_entry);
-        if (savedInstanceState == null) {
-            getFragmentManager().beginTransaction()
-                    .add(R.id.container, new PlaceholderFragment())
-                    .commit();
-        }
+
     }
 
 
@@ -47,24 +43,4 @@ public class ShowEntry extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    /**
-     * A placeholder fragment containing a simple view.
-     */
-    public static class PlaceholderFragment extends Fragment {
-
-        public PlaceholderFragment() {
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_show_entry, container, false);
-
-            TextView textView = (TextView) rootView.findViewById(R.id.show_entry_text);
-            Bundle extras = getActivity().getIntent().getExtras();
-            textView.setText(extras.getString("text"));
-
-            return rootView;
-        }
-    }
 }

@@ -1,8 +1,42 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="kpi.mobcomp.korean_grammar.nouns"
-    tools:ignore="MergeRootFrame" >
-</FrameLayout>
+    tools:ignore="MergeRootFrame"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="@string/button_noun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="@string/word_human"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_human"
+        android:onClick="showEntry"/>
+    <Button
+        android:text="@string/word_weather"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_weather"
+        android:onClick="showEntry"/>
+    <Button
+        android:text="@string/word_tree"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_tree"
+        android:layout_gravity="center_horizontal"
+        android:onClick="showEntry"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/word_market"
+        android:id="@+id/button_market"
+        android:layout_gravity="center_horizontal"
+        android:onClick="showEntry"/>
+
+</LinearLayout>

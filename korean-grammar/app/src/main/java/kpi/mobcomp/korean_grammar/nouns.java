@@ -22,12 +22,6 @@ public class nouns extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nouns);
-        if (savedInstanceState == null) {
-            getFragmentManager().beginTransaction()
-                    .add(R.id.container, new PlaceholderFragment())
-                    .commit();
-        }
-
 
     }
 
@@ -79,18 +73,4 @@ public class nouns extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    /**
-     * A placeholder fragment containing a simple view.
-     */
-    public static class PlaceholderFragment extends Fragment {
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                Bundle savedInstanceState) {
-//            View rootView = inflater.inflate(R.layout.fragment_nouns, container, false);
-            LinearLayout rootView = (LinearLayout) inflater.inflate(R.layout.fragment_nouns, container, false);
-
-            return rootView;
-        }
-    }
 }
