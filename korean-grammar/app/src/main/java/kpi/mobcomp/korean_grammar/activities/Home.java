@@ -1,4 +1,4 @@
-package kpi.mobcomp.korean_grammar;
+package kpi.mobcomp.korean_grammar.activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,41 +7,48 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import kpi.mobcomp.korean_grammar.R;
 
-public class Grammar extends Activity {
+
+public class Home extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_grammar);
+        setContentView(R.layout.activity_home);
+//        Button buttonNoun = (Button) findViewById( R.id.button_noun );
+//        buttonNoun.setOnClickListener(  );
     }
 
-    public void showEntry(View iView) {
-        Intent intent = new Intent( Grammar.this, ShowEntry.class );
+    /** Called when the "Basic words (noun)" button is clicked */
+    public void startNouns(View iView) {
+        Intent intent = new Intent( this, nouns.class );
 
-        int grammarTextId;
+        startActivity(intent);
+    }
 
-        switch (iView.getId()) {
-            case R.id.grammar_symnida:
-                grammarTextId = R.string.grammar_symnida_text;
-                break;
-            case R.id.grammar_symnika:
-                grammarTextId = R.string.grammar_symnika_text;
-                break;
-            default:
-                grammarTextId = R.string.button_error;
-        }
+    public void startVerbs(View iView) {
+        Intent intent = new Intent( this, Verbs.class );
 
-        String grammarText = getResources().getString(grammarTextId);
+        startActivity(intent);
+    }
 
-        intent.putExtra("text", grammarText);
+    public void startGrammar(View iView) {
+        Intent intent = new Intent( this, Grammar.class );
+
+        startActivity(intent);
+    }
+
+    public void startNumbers(View iView) {
+        Intent intent = new Intent( this, Numerals.class );
+
         startActivity(intent);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.grammar, menu);
+        getMenuInflater().inflate(R.menu.home, menu);
         return true;
     }
 
@@ -56,4 +63,5 @@ public class Grammar extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 }

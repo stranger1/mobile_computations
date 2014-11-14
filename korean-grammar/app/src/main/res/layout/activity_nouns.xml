@@ -3,7 +3,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="kpi.mobcomp.korean_grammar.nouns"
+    tools:context="kpi.mobcomp.korean_grammar.activities.nouns"
     tools:ignore="MergeRootFrame"
     android:orientation="vertical">
 

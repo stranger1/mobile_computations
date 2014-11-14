@@ -1,4 +1,4 @@
-package kpi.mobcomp.korean_grammar;
+package kpi.mobcomp.korean_grammar.activities;
 
 import android.app.Activity;
 import android.app.ActionBar;
@@ -11,48 +11,29 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
-import android.widget.Button;
+import android.widget.TextView;
+
+import kpi.mobcomp.korean_grammar.R;
 
 
-public class Home extends Activity {
+public class ShowEntry extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
-//        Button buttonNoun = (Button) findViewById( R.id.button_noun );
-//        buttonNoun.setOnClickListener(  );
+        setContentView(R.layout.activity_show_entry);
+
+        TextView textView = (TextView) findViewById(R.id.show_entry_text);
+        Bundle extras = getIntent().getExtras();
+        textView.setText(extras.getString("text"));
+
     }
 
-    /** Called when the "Basic words (noun)" button is clicked */
-    public void startNouns(View iView) {
-        Intent intent = new Intent( this, nouns.class );
-
-        startActivity(intent);
-    }
-
-    public void startVerbs(View iView) {
-        Intent intent = new Intent( this, Verbs.class );
-
-        startActivity(intent);
-    }
-
-    public void startGrammar(View iView) {
-        Intent intent = new Intent( this, Grammar.class );
-
-        startActivity(intent);
-    }
-
-    public void startNumbers(View iView) {
-        Intent intent = new Intent( this, Numerals.class );
-
-        startActivity(intent);
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.home, menu);
+        getMenuInflater().inflate(R.menu.show_entry, menu);
         return true;
     }
 

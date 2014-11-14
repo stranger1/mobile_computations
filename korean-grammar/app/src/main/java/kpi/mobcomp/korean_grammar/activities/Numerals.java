@@ -1,4 +1,4 @@
-package kpi.mobcomp.korean_grammar;
+package kpi.mobcomp.korean_grammar.activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,38 +7,29 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import kpi.mobcomp.korean_grammar.R;
 
-public class Verbs extends Activity {
+
+public class Numerals extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_verbs);
+        setContentView(R.layout.activity_numerals);
     }
 
-    public  void showEntry(View iView) {
-        Intent intent = new Intent( Verbs.this, ShowEntry.class );
+    public void showEntry(View iView) {
+        Intent intent = new Intent( Numerals.this, ShowEntry.class );
 
         int grammarTextId;
 
         switch (iView.getId()) {
-            case R.id.button_to_like:
-                grammarTextId = R.string.word_to_like_text;
-                break;
-            case R.id.button_to_love:
-                grammarTextId = R.string.word_to_love_text;
-                break;
-            case R.id.button_to_travel:
-                grammarTextId = R.string.word_to_travel_text;
-                break;
-            case R.id.button_to_wait:
-                grammarTextId = R.string.word_to_wait_text;
-                break;
+            //TODO
             default:
                 grammarTextId = R.string.button_error;
         }
 
-        String grammarText = getResources().getString(grammarTextId);
+        String grammarText = "Under construction.";//getResources().getString(grammarTextId);
 
         intent.putExtra("text", grammarText);
         startActivity(intent);
@@ -47,7 +38,7 @@ public class Verbs extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.verbs, menu);
+        getMenuInflater().inflate(R.menu.numerals, menu);
         return true;
     }
 
