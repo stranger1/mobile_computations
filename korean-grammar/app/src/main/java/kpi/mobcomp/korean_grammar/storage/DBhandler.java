@@ -18,7 +18,7 @@ public class DBhandler extends SQLiteOpenHelper {
             + GrammarEntrySchema.GrammarEntryStructure.TABLE_NAME + " ("
             + GrammarEntrySchema.GrammarEntryStructure.ENTRY_ID + " integer primary key, "
             + GrammarEntrySchema.GrammarEntryStructure.TITLE + " text, "
-            + GrammarEntrySchema.GrammarEntryStructure.ENTRY_PAYLOAD + "text)";
+            + GrammarEntrySchema.GrammarEntryStructure.ENTRY_PAYLOAD + " text)";
 
     @Override
     public void onCreate(SQLiteDatabase db) {
@@ -29,4 +29,5 @@ public class DBhandler extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
     }
+
 }

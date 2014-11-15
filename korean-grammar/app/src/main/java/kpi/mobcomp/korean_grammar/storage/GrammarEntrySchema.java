@@ -9,12 +9,12 @@ public final class GrammarEntrySchema {
     public GrammarEntrySchema(){}
 
     public static abstract class GrammarEntryStructure implements BaseColumns {
-        public static final String DATABASE_NAME = "grammar.stor";
+        public static final String DATABASE_NAME = "grammar.storage";
 
         public static final String TABLE_NAME = "grammarEntry";
         public static final String ENTRY_ID = "id";
         public static final String TITLE = "title";
-        public static final String ENTRY_PAYLOAD = "entry";
+        public static final String ENTRY_PAYLOAD = "entryPayload";
 
     }
 }
