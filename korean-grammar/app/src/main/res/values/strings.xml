@@ -4,6 +4,7 @@
     <string name="app_name">Korean grammar</string>
     <string name="hello_username">Hello, username!</string>
     <string name="action_settings">Settings</string>
+    <string name="reset_database">Reset database</string>
     <string name="button_noun">Basic words (noun)</string>
     <string name="button_verb">Basic words (verb)</string>
     <string name="button_grammar">Grammar</string>
@@ -34,12 +35,12 @@
     <string name="word_to_wait_text">examples \'기다리다\'</string>
 
     <!-- Grammar -->
-    <string name="grammar_symnida">~(스)ㅂ니다 (do)</string>
-    <string name="grammar_symnida_text">The basic form of korean verbs and adjectives are "~다".
-        We change "~다" into "~(스)ㅂ니다" in formal situation, such as in a meeting, presentation,
+    <string name="grammar_symnida">(스)ㅂ니다 (do)</string>
+    <string name="grammar_symnida_text">The basic form of korean verbs and adjectives are "-다".
+        We change "-다" into "-(스)ㅂ니다" in formal situation, such as in a meeting, presentation,
         interview, newscast, etc. When the "stem(어미)" of the verb/adjective ends in a vowel,
         we add "~ㅂ니다" to the word stem. When the word stem ends in a last consonant, we add "습니다".</string>
-    <string name="grammar_symnika">~(스)ㅂ니까 (do?)</string>
+    <string name="grammar_symnika">(스)ㅂ니까 (do?)</string>
     <string name="grammar_symnika_text">When we use "(스)ㅂ니다" in a formal context, we use "–(스)ㅂ니까?"
         to ask a question.</string>
 
@@ -52,5 +53,6 @@
     <string name="title_activity_verbs">Verbs</string>
     <string name="title_activity_grammar">Grammar</string>
     <string name="title_activity_numerals">Numerals</string>
+    <string name="title_activity_base">BaseActivity</string>
 
 </resources>

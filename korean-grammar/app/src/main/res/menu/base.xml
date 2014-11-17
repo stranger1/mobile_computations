@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="kpi.mobcomp.korean_grammar.activities.BaseActivity" >
+    <item android:id="@+id/reset_database"
+        android:title="@string/reset_database"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>

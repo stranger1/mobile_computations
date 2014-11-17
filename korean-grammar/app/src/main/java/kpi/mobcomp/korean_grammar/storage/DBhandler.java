@@ -30,4 +30,9 @@ public class DBhandler extends SQLiteOpenHelper {
 
     }
 
+    public void resetToDefaults( SQLiteDatabase db ) {
+
+
+    }
+
 }

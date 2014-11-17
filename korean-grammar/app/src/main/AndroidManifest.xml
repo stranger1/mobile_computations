@@ -36,6 +36,10 @@
             android:name=".activities.Numerals"
             android:label="@string/title_activity_numerals" >
         </activity>
+        <activity
+            android:name=".activities.BaseActivity"
+            android:label="@string/title_activity_base" >
+        </activity>
     </application>
 
 </manifest>
