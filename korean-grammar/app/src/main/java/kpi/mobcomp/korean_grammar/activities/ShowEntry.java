@@ -22,20 +22,6 @@ import kpi.mobcomp.korean_grammar.storage.GrammarEntrySchema;
 
 public class ShowEntry extends Activity {
 
-    /** SQL test method. Do not use */
-    public void populate(DBhandler iDBhandler) {
-        SQLiteDatabase db = iDBhandler.getWritableDatabase();
-
-        db.execSQL( "insert into " + GrammarEntrySchema.GrammarEntryStructure.TABLE_NAME + "("
-                + GrammarEntrySchema.GrammarEntryStructure.ENTRY_ID + ","
-                + GrammarEntrySchema.GrammarEntryStructure.TITLE + ","
-                + GrammarEntrySchema.GrammarEntryStructure.ENTRY_PAYLOAD + ")"
-
-                + " VALUES ("
-                + R.id.grammar_symnida + ","
-                + "'" + getString(R.string.grammar_symnida) + "'" + ","
-                + "'" + getString(R.string.grammar_symnida_text) + "')");
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,8 +31,6 @@ public class ShowEntry extends Activity {
         TextView textView = (TextView) findViewById(R.id.show_entry_text);
         Bundle extras = getIntent().getExtras();
         textView.setText(extras.getString("text"));
-        DBhandler database = new DBhandler(this.getBaseContext());
-//        populate(database);
     }
 
 
