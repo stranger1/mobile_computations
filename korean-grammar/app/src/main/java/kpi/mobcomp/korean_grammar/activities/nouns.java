@@ -1,4 +1,4 @@
-package kpi.mobcomp.korean_grammar;
+package kpi.mobcomp.korean_grammar.activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,41 +7,29 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import kpi.mobcomp.korean_grammar.R;
 
-public class Grammar extends Activity {
+public class nouns extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_grammar);
+        setContentView(R.layout.activity_nouns);
+
     }
 
+
     public void showEntry(View iView) {
-        Intent intent = new Intent( Grammar.this, ShowEntry.class );
+        Intent intent = new Intent( nouns.this, ShowEntry.class );
 
-        int grammarTextId;
-
-        switch (iView.getId()) {
-            case R.id.grammar_symnida:
-                grammarTextId = R.string.grammar_symnida_text;
-                break;
-            case R.id.grammar_symnika:
-                grammarTextId = R.string.grammar_symnika_text;
-                break;
-            default:
-                grammarTextId = R.string.button_error;
-        }
-
-        String grammarText = getResources().getString(grammarTextId);
-
-        intent.putExtra("text", grammarText);
+        intent.putExtra("textId", iView.getId());
         startActivity(intent);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.grammar, menu);
+        getMenuInflater().inflate(R.menu.nouns, menu);
         return true;
     }
 
@@ -56,4 +44,5 @@ public class Grammar extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 }
