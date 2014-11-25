@@ -5,6 +5,7 @@ import android.app.ActionBar;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -30,7 +31,21 @@ public class ShowEntry extends BaseActivity {
 
         TextView textView = (TextView) findViewById(R.id.show_entry_text);
         Bundle extras = getIntent().getExtras();
-        textView.setText(extras.getString("text"));
+        String dataId = Integer.toString(extras.getInt("textId"));
+
+        DBhandler dBhandler = new DBhandler(this);
+        SQLiteDatabase db = dBhandler.getReadableDatabase();
+
+        String selectQuery = "select " + GrammarEntrySchema.GrammarEntryStructure.ENTRY_PAYLOAD
+                + " from " + GrammarEntrySchema.GrammarEntryStructure.TABLE_NAME
+                + " where "
+                + GrammarEntrySchema.GrammarEntryStructure.ENTRY_ID + "=" + dataId;
+
+        Cursor resultSet = db.rawQuery(selectQuery, null);
+        resultSet.moveToFirst();
+        String grammarText = resultSet.getString(0);
+
+        textView.setText( grammarText );
     }
 
 

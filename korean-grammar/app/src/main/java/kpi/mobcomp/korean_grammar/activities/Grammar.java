@@ -25,19 +25,7 @@ public class Grammar extends BaseActivity {
     public void showEntry(View iView) {
         Intent intent = new Intent( Grammar.this, ShowEntry.class );
 
-        DBhandler dBhandler = new DBhandler(this);
-        SQLiteDatabase db = dBhandler.getReadableDatabase();
-
-        String selectQuery = "select " + GrammarEntrySchema.GrammarEntryStructure.ENTRY_PAYLOAD
-                + " from " + GrammarEntrySchema.GrammarEntryStructure.TABLE_NAME
-                + " where "
-                + GrammarEntrySchema.GrammarEntryStructure.ENTRY_ID + "=" + Integer.toString(iView.getId());
-
-        Cursor resultSet = db.rawQuery(selectQuery, null);
-        resultSet.moveToFirst();
-        String grammarText = resultSet.getString(0);
-
-        intent.putExtra("text", grammarText);
+        intent.putExtra("textId", iView.getId());
         startActivity(intent);
     }
 
