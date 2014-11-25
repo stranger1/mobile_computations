@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import kpi.mobcomp.korean_grammar.R;
+import kpi.mobcomp.korean_grammar.storage.DBhandler;
 
 
 public class Home extends BaseActivity {
@@ -16,6 +17,9 @@ public class Home extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+/*
+        DBhandler dBhandler = new DBhandler( this );
+        resetDatabase( dBhandler.getWritableDatabase() );*/
 //        Button buttonNoun = (Button) findViewById( R.id.button_noun );
 //        buttonNoun.setOnClickListener(  );
     }
