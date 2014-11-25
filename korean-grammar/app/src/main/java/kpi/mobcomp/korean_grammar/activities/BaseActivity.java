@@ -95,7 +95,7 @@ public class BaseActivity extends Activity {
 
                 + "(" + R.id.numerals_sinokorean + ","
                 + "'" + getString(R.string.numerals_sinokorean) + "'" + ","
-                + "'" + getString(R.string.numerals_sinokorean_text) + "'), "
+                + "'" + getString(R.string.numerals_sinokorean_text) + "') "
         );
         /** populating */
     }

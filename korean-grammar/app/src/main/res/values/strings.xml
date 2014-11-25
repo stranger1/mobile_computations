@@ -16,9 +16,9 @@
 
     <!-- Nouns -->
     <string name="word_human">사람 - human</string>
-    <string name="word_human_text">example \'사람\'</string>
+    <string name="word_human_text">example 사람</string>
     <string name="word_weather">날씨 - weather</string>
-    <string name="word_weather_text">example \'날씨\'</string>
+    <string name="word_weather_text">example 날씨</string>
     <string name="word_tree">나무 - tree</string>
     <string name="word_tree_text">example tree</string>
     <string name="word_market">시장 - market</string>
@@ -26,13 +26,13 @@
 
     <!-- Verbs -->
     <string name="word_to_like">좋아하다 - to like</string>
-    <string name="word_to_like_text">examples \'좋아하다\' </string>
+    <string name="word_to_like_text">examples 좋아하다 </string>
     <string name="word_to_love">사랑하다 - to love</string>
-    <string name="word_to_love_text">examples \'사랑하다\' </string>
+    <string name="word_to_love_text">examples 사랑하다 </string>
     <string name="word_to_travel">여행하다 - to travel</string>
-    <string name="word_to_travel_text">examples \'여행하다\'</string>
+    <string name="word_to_travel_text">examples 여행하다</string>
     <string name="word_to_wait">기다리다 - to wait</string>
-    <string name="word_to_wait_text">examples \'기다리다\'</string>
+    <string name="word_to_wait_text">examples 기다리다</string>
 
     <!-- Grammar -->
     <string name="grammar_symnida">(스)ㅂ니다 (do)</string>
