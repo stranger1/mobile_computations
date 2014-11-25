@@ -46,7 +46,12 @@
 
     <!-- Numeric -->
     <string name="numerals_korean">Korean numerals</string>
+    <string name="numerals_korean_text">일 - 1\n이 - 2\n삼 - 3\n사 - 4\n
+        오 - 5\n육 - 6\n칠 - 7\n팔 - 8\n구 - 9\n십 - 10\n백 - 100\n</string>
     <string name="numerals_sinokorean">Sino-korean numerals</string>
+    <string name="numerals_sinokorean_text">한 - 1\n두 - 2\n세 - 3\n네 - 4\n
+        다섣 - 5\n여섣 - 6\n일곱 - 7\n여덟 - 8\n아홉 - 9\n열 - 10\n스물 - 20\n
+        서른 - 30\n마흔 - 40\n쉰 - 50</string>
 
     <!-- Error messages -->
     <string name="button_error">Button click error</string>

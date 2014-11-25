@@ -88,6 +88,14 @@ public class BaseActivity extends Activity {
                 + "(" + R.id.button_to_travel + ","
                 + "'" + getString(R.string.word_to_travel) + "'" + ","
                 + "'" + getString(R.string.word_to_travel_text) + "'), "
+
+                + "(" + R.id.numerals_korean + ","
+                + "'" + getString(R.string.numerals_korean) + "'" + ","
+                + "'" + getString(R.string.numerals_korean_text) + "'), "
+
+                + "(" + R.id.numerals_sinokorean + ","
+                + "'" + getString(R.string.numerals_sinokorean) + "'" + ","
+                + "'" + getString(R.string.numerals_sinokorean_text) + "'), "
         );
         /** populating */
     }
