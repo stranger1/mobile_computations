@@ -3,13 +3,24 @@ mobile_computations
 
 Project for "Mobile computations" KPI course.
 
-The idea of project is **Grammar Handbook** (for English or Korean language).
-Features to consider:
+The idea of project is **Grammar Handbook** (for Korean language).
+The developed program is intended to help with studying or revising Korean language.
+It contains grammar rule, numerals, basic words with examples of usage.
+Features:
 * Categorized grammar rules
-* Sorting in an order prefered for studying or just in categories (for revision)
-* Bookmarks
+* Different user categories (user and admin)
+* Admins are allowed to edit entries (grammar articles)
 
-*Details of the project are to be specified. For now this repository is created as a requirement for a first lab*
+
+
+#####Laboratory work requirements 
+1. Create repo:
+Done (as you can see).
+2. Create interface:
+![App's interface](screen.png)
+![App's interface](screen2.png)
+![App's interface](screen3.png)
+3. ...
 
 Project team
 --------
