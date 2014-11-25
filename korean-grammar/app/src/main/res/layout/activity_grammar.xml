@@ -28,7 +28,7 @@
         android:text="@string/grammar_symnika"
         android:id="@+id/grammar_symnika"
         android:layout_gravity="center_horizontal"
-        />
+        android:onClick="showEntry"/>
 
 
 </LinearLayout>
