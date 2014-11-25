@@ -21,17 +21,7 @@ public class Numerals extends BaseActivity {
     public void showEntry(View iView) {
         Intent intent = new Intent( Numerals.this, ShowEntry.class );
 
-        int grammarTextId;
-
-        switch (iView.getId()) {
-            //TODO
-            default:
-                grammarTextId = R.string.button_error;
-        }
-
-        String grammarText = "Under construction.";//getResources().getString(grammarTextId);
-
-        intent.putExtra("text", grammarText);
+        intent.putExtra("textId", iView.getId());
         startActivity(intent);
     }
 

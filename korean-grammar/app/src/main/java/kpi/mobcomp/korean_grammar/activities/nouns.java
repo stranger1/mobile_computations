@@ -22,28 +22,7 @@ public class nouns extends BaseActivity {
     public void showEntry(View iView) {
         Intent intent = new Intent( nouns.this, ShowEntry.class );
 
-        int grammarTextId;
-
-        switch (iView.getId()) {
-            case R.id.button_human:
-                grammarTextId = R.string.word_human_text;
-                break;
-            case R.id.button_weather:
-                grammarTextId = R.string.word_weather_text;
-                break;
-            case R.id.button_market:
-                grammarTextId = R.string.word_market_text;
-                break;
-            case R.id.button_tree:
-                grammarTextId = R.string.word_tree_text;
-                break;
-            default:
-                grammarTextId = R.string.button_error;
-        }
-
-        String grammarText = getResources().getString(grammarTextId);
-
-        intent.putExtra("text", grammarText);
+        intent.putExtra("textId", iView.getId());
         startActivity(intent);
     }
 

@@ -21,28 +21,7 @@ public class Verbs extends BaseActivity {
     public  void showEntry(View iView) {
         Intent intent = new Intent( Verbs.this, ShowEntry.class );
 
-        int grammarTextId;
-
-        switch (iView.getId()) {
-            case R.id.button_to_like:
-                grammarTextId = R.string.word_to_like_text;
-                break;
-            case R.id.button_to_love:
-                grammarTextId = R.string.word_to_love_text;
-                break;
-            case R.id.button_to_travel:
-                grammarTextId = R.string.word_to_travel_text;
-                break;
-            case R.id.button_to_wait:
-                grammarTextId = R.string.word_to_wait_text;
-                break;
-            default:
-                grammarTextId = R.string.button_error;
-        }
-
-        String grammarText = getResources().getString(grammarTextId);
-
-        intent.putExtra("text", grammarText);
+        intent.putExtra("textId", iView.getId());
         startActivity(intent);
     }
 
