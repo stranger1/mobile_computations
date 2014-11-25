@@ -2,12 +2,16 @@ package kpi.mobcomp.korean_grammar.activities;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 import kpi.mobcomp.korean_grammar.R;
+import kpi.mobcomp.korean_grammar.storage.DBhandler;
+import kpi.mobcomp.korean_grammar.storage.GrammarEntrySchema;
 
 
 public class Grammar extends BaseActivity {
@@ -21,20 +25,17 @@ public class Grammar extends BaseActivity {
     public void showEntry(View iView) {
         Intent intent = new Intent( Grammar.this, ShowEntry.class );
 
-        int grammarTextId;
+        DBhandler dBhandler = new DBhandler(this);
+        SQLiteDatabase db = dBhandler.getReadableDatabase();
 
-        switch (iView.getId()) {
-            case R.id.grammar_symnida:
-                grammarTextId = R.string.grammar_symnida_text;
-                break;
-            case R.id.grammar_symnika:
-                grammarTextId = R.string.grammar_symnika_text;
-                break;
-            default:
-                grammarTextId = R.string.button_error;
-        }
+        String selectQuery = "select " + GrammarEntrySchema.GrammarEntryStructure.ENTRY_PAYLOAD
+                + " from " + GrammarEntrySchema.GrammarEntryStructure.TABLE_NAME
+                + " where "
+                + GrammarEntrySchema.GrammarEntryStructure.ENTRY_ID + "=" + Integer.toString(iView.getId());
 
-        String grammarText = getResources().getString(grammarTextId);
+        Cursor resultSet = db.rawQuery(selectQuery, null);
+        resultSet.moveToFirst();
+        String grammarText = resultSet.getString(0);
 
         intent.putExtra("text", grammarText);
         startActivity(intent);
