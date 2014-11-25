@@ -20,7 +20,7 @@ import kpi.mobcomp.korean_grammar.R;
 import kpi.mobcomp.korean_grammar.storage.GrammarEntrySchema;
 
 
-public class ShowEntry extends Activity {
+public class ShowEntry extends BaseActivity {
 
 
     @Override

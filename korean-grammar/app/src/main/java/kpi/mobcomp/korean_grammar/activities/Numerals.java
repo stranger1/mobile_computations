@@ -10,7 +10,7 @@ import android.view.View;
 import kpi.mobcomp.korean_grammar.R;
 
 
-public class Numerals extends Activity {
+public class Numerals extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

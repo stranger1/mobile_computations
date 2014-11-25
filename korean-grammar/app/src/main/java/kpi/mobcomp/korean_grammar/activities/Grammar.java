@@ -10,7 +10,7 @@ import android.view.View;
 import kpi.mobcomp.korean_grammar.R;
 
 
-public class Grammar extends Activity {
+public class Grammar extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
