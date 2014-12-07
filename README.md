@@ -28,4 +28,4 @@ Done (as you can see).
 4. Launch on the device (done).
 Authorization (not so done).
 5. CPU Profiler:
-![CPU usage](profiler.jpg)
+![CPU usage](profiler2.jpg)
