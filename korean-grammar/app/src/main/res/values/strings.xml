@@ -13,6 +13,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="kor_country">나라!</string>
     <string name="title_activity_show_entry">ShowEntry</string>
+    <string name="edit_entry_text">Edit</string>
 
     <!-- Nouns -->
     <string name="word_human">사람 - human</string>

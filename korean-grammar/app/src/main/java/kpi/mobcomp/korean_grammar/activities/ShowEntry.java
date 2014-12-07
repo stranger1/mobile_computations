@@ -14,6 +14,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
+import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import kpi.mobcomp.korean_grammar.storage.DBhandler;
 
@@ -23,6 +25,7 @@ import kpi.mobcomp.korean_grammar.storage.GrammarEntrySchema;
 
 public class ShowEntry extends BaseActivity {
 
+    public String dataId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +34,7 @@ public class ShowEntry extends BaseActivity {
 
         TextView textView = (TextView) findViewById(R.id.show_entry_text);
         Bundle extras = getIntent().getExtras();
-        String dataId = Integer.toString(extras.getInt("textId"));
+        dataId = Integer.toString(extras.getInt("textId"));
 
         DBhandler dBhandler = new DBhandler(this);
         SQLiteDatabase db = dBhandler.getReadableDatabase();
@@ -46,5 +49,16 @@ public class ShowEntry extends BaseActivity {
         String grammarText = resultSet.getString(0);
 
         textView.setText( grammarText );
+    }
+
+    public void onEdit(View iView) {
+        TextView textView = (TextView) findViewById(R.id.show_entry_text);
+        textView.setVisibility(View.INVISIBLE);
+
+        EditText editText = new EditText( getBaseContext() );
+        editText.setLayoutParams( new ActionBar.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT));
+        editText.setText( textView.getText() );
+        RelativeLayout layout = (RelativeLayout) findViewById(R.id.container);
+        layout.addView( editText );
     }
 }
